@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
     <title>Favourite Cartoon</title>
@@ -7,14 +8,20 @@
         body {
             background: #11223c;
             font-family: 'zilla slab', sans-serif;
-
         }
-        /* THE HEADER HOLDS THE TITLE */
+
         h1 {
+
             text-align: center;
             color: yellow;
             padding-top: 50px;
         }
+
+        p {
+            color: white;
+            text-align: center;
+        }
+
 
         /* THE MAINCONTAINER HOLDS CARD */
         .maincontainer {
@@ -29,9 +36,6 @@
 
         /* THE CARD HOLDS THE FRONT AND BACK FACES */
         .thecard {
-            position: relative;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             border-radius: 10px;
@@ -50,8 +54,6 @@
         /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
         .thefront {
             position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             border-radius: 10px;
@@ -76,9 +78,10 @@
         }
 
         /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-        .theback h1{
+        .theback h1 {
             font-weight: bold;
             font-size: 24px;
+            text-align: center;
         }
 
         .thefront img {
@@ -87,27 +90,27 @@
             object-fit: fill;
 
         }
-
-        p{
-            color: white;
-        }
     </style>
 </head>
 
 <body>
-    <h1>My Favourite Cartoon</h1>   
+
+    <h1>My Favourite Cartoon</h1>
+    <p><i>by Coach Kani</i></p>
+
     <div class="maincontainer">
         <div class="thecard">
 
             <div class="thefront">
-                <img src="https://my.kumonglobal.com/wp-content/uploads/2022/03/Learn-from-Rowan-Atkinson_Kumon-Malaysia_530x530_NewsThumbnail.jpg" alt="Mack_Truck" />
+                <img src="https://my.kumonglobal.com/wp-content/uploads/2022/03/Learn-from-Rowan-Atkinson_Kumon-Malaysia_530x530_NewsThumbnail.jpg"
+                    alt="Mr Bean" />
             </div>
 
             <div class="theback">
                 <h1>Mr Bean</h1>
                 <p>by Rowan Atkinson</p>
             </div>
-        
+
         </div>
     </div>
 
